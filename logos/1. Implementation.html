@@ -1,0 +1,92 @@
+<style>
+svg.ns7{--bsec:rgba(20,20,19,.35);--tpri:#1a1a18;--ttert:#73726c;--nf:#EEEDFE;--ns:#534AB7;--af:#1D9E75;--as:#0F6E56;--cf:#E1F5EE;--cs:#0F6E56;--ct:#085041;--md:#1D9E75}
+svg.ns7 .tts{font:500 12px var(--font-sans,system-ui,sans-serif);fill:var(--color-text-primary,var(--tpri))}
+svg.ns7 .sts{font:400 11px var(--font-sans,system-ui,sans-serif);fill:var(--color-text-tertiary,var(--ttert))}
+svg.ns7 .st{font:400 12px var(--font-sans,system-ui,sans-serif)}
+svg.ns7 .hint{fill:var(--color-text-tertiary,var(--ttert))}
+svg.ns7 .nt{fill:var(--ct)}
+svg.ns7 .rail{stroke:var(--color-border-secondary,var(--bsec));stroke-width:1.25}
+svg.ns7 .pbase{fill:var(--nf);stroke:var(--ns);stroke-width:1}
+svg.ns7 .lit{fill:var(--af);stroke:var(--as);stroke-width:1;opacity:0}
+svg.ns7 .prog{stroke:var(--af);stroke-width:1.75;transform-box:fill-box;transform-origin:left center}
+svg.ns7 .dot{opacity:0}
+svg.ns7 .core{fill:var(--cf);stroke:var(--cs);stroke-width:1}
+svg.ns7 .ring{fill:none;stroke:var(--color-border-secondary,var(--bsec));stroke-width:0.75;stroke-dasharray:3 4}
+svg.ns7 .mdot{fill:var(--md)}
+svg.ns7 .pulse{fill:none;stroke:var(--cs);stroke-width:1;opacity:0;transform-box:fill-box;transform-origin:center}
+svg.ns7 .orb1,svg.ns7 .orb2{transform-origin:340px 305px}
+@media(prefers-color-scheme:dark){
+svg.ns7{--bsec:rgba(245,244,238,.35);--tpri:#f5f4ee;--ttert:#9c9a92;--nf:#3C3489;--ns:#AFA9EC;--af:#5DCAA5;--as:#9FE1CB;--cf:#085041;--cs:#9FE1CB;--ct:#9FE1CB;--md:#5DCAA5}
+}
+svg.ns7 .prog{animation:ns7p 6s linear infinite}
+svg.ns7 .dot{animation:ns7d 6s linear infinite}
+svg.ns7 .n0{animation:ns7n0 6s linear infinite}svg.ns7 .n1{animation:ns7n1 6s linear infinite}
+svg.ns7 .n2{animation:ns7n2 6s linear infinite}svg.ns7 .n3{animation:ns7n3 6s linear infinite}
+svg.ns7 .n4{animation:ns7n4 6s linear infinite}svg.ns7 .n5{animation:ns7n5 6s linear infinite}
+svg.ns7 .n6{animation:ns7n6 6s linear infinite}
+svg.ns7 .orb1{animation:ns7r1 18s linear infinite}
+svg.ns7 .orb2{animation:ns7r2 11s linear infinite}
+svg.ns7 .pulse{animation:ns7pl 2.4s ease-out infinite}
+@keyframes ns7p{0%{transform:scaleX(0);opacity:1}92%{transform:scaleX(1);opacity:1}96%{transform:scaleX(1);opacity:1}100%{transform:scaleX(1);opacity:0}}
+@keyframes ns7d{0%{transform:translateX(0);opacity:1}92%{transform:translateX(530px);opacity:1}96%{transform:translateX(530px);opacity:1}100%{transform:translateX(530px);opacity:0}}
+@keyframes ns7n0{0%{opacity:0}2%{opacity:0}5%{opacity:1}95%{opacity:1}100%{opacity:0}}
+@keyframes ns7n1{0%{opacity:0}15%{opacity:0}18%{opacity:1}95%{opacity:1}100%{opacity:0}}
+@keyframes ns7n2{0%{opacity:0}31%{opacity:0}34%{opacity:1}95%{opacity:1}100%{opacity:0}}
+@keyframes ns7n3{0%{opacity:0}46%{opacity:0}49%{opacity:1}95%{opacity:1}100%{opacity:0}}
+@keyframes ns7n4{0%{opacity:0}61%{opacity:0}64%{opacity:1}95%{opacity:1}100%{opacity:0}}
+@keyframes ns7n5{0%{opacity:0}77%{opacity:0}80%{opacity:1}95%{opacity:1}100%{opacity:0}}
+@keyframes ns7n6{0%{opacity:0}92%{opacity:0}95%{opacity:1}97%{opacity:1}100%{opacity:0}}
+@keyframes ns7r1{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes ns7r2{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
+@keyframes ns7pl{0%{transform:scale(1);opacity:.55}70%{transform:scale(1.45);opacity:0}100%{transform:scale(1.45);opacity:0}}
+</style>
+<svg class="ns7" width="64%" viewBox="0 0 680 520" role="img">
+<title>NetSuite implementation timeline and orbital view</title>
+<desc>A seven phase implementation timeline sweeps across the top while workstream satellites orbit a central NetSuite core below.</desc>
+<line class="rail" x1="75" y1="70" x2="605" y2="70"/>
+<line class="prog" x1="75" y1="70" x2="605" y2="70"/>
+<circle class="pbase" cx="75" cy="70" r="7"/><circle class="lit n0" cx="75" cy="70" r="7"/>
+<circle class="pbase" cx="163" cy="70" r="7"/><circle class="lit n1" cx="163" cy="70" r="7"/>
+<circle class="pbase" cx="252" cy="70" r="7"/><circle class="lit n2" cx="252" cy="70" r="7"/>
+<circle class="pbase" cx="340" cy="70" r="7"/><circle class="lit n3" cx="340" cy="70" r="7"/>
+<circle class="pbase" cx="428" cy="70" r="7"/><circle class="lit n4" cx="428" cy="70" r="7"/>
+<circle class="pbase" cx="517" cy="70" r="7"/><circle class="lit n5" cx="517" cy="70" r="7"/>
+<circle class="pbase" cx="605" cy="70" r="7"/><circle class="lit n6" cx="605" cy="70" r="7"/>
+<circle class="dot" cx="75" cy="70" r="4" fill="#EF9F27"/>
+<text class="tts" x="75" y="100" text-anchor="middle" dominant-baseline="central">Discover</text>
+<text class="sts" x="75" y="117" text-anchor="middle" dominant-baseline="central">Requirements</text>
+<text class="tts" x="163" y="100" text-anchor="middle" dominant-baseline="central">Design</text>
+<text class="sts" x="163" y="117" text-anchor="middle" dominant-baseline="central">Architecture</text>
+<text class="tts" x="252" y="100" text-anchor="middle" dominant-baseline="central">Build</text>
+<text class="sts" x="252" y="117" text-anchor="middle" dominant-baseline="central">Configure</text>
+<text class="tts" x="340" y="100" text-anchor="middle" dominant-baseline="central">Data migration</text>
+<text class="sts" x="340" y="117" text-anchor="middle" dominant-baseline="central">Extract &amp; load</text>
+<text class="tts" x="428" y="100" text-anchor="middle" dominant-baseline="central">Validate</text>
+<text class="sts" x="428" y="117" text-anchor="middle" dominant-baseline="central">UAT &amp; fixes</text>
+<text class="tts" x="517" y="100" text-anchor="middle" dominant-baseline="central">Go-live</text>
+<text class="sts" x="517" y="117" text-anchor="middle" dominant-baseline="central">Cutover</text>
+<text class="tts" x="605" y="100" text-anchor="middle" dominant-baseline="central">Support</text>
+<text class="sts" x="605" y="117" text-anchor="middle" dominant-baseline="central">Hypercare</text>
+<circle class="ring" cx="340" cy="305" r="85"/>
+<circle class="ring" cx="340" cy="305" r="132"/>
+<g class="orb1">
+<circle cx="472" cy="305" r="7" fill="#EF9F27"/>
+<circle cx="380.8" cy="430.5" r="7" fill="#D85A30"/>
+<circle cx="233.2" cy="382.6" r="7" fill="#D4537E"/>
+<circle cx="233.2" cy="227.4" r="7" fill="#7F77DD"/>
+<circle cx="380.8" cy="179.5" r="7" fill="#1D9E75"/>
+</g>
+<g class="orb2">
+<circle class="mdot" cx="425" cy="305" r="4.5"/>
+<circle class="mdot" cx="297.5" cy="378.6" r="4.5"/>
+<circle class="mdot" cx="297.5" cy="231.4" r="4.5"/>
+</g>
+<circle class="pulse" cx="340" cy="305" r="48"/>
+<circle class="core" cx="340" cy="305" r="48"/>
+<text class="nt" x="340" y="305" text-anchor="middle" dominant-baseline="central" style="font:500 14.7px var(--font-sans,system-ui,sans-serif)">NetSuite</text>
+<circle cx="60" cy="492" r="5" fill="#EF9F27"/><text class="st hint" x="72" y="492" dominant-baseline="central">Processes</text>
+<circle cx="170" cy="492" r="5" fill="#D85A30"/><text class="st hint" x="182" y="492" dominant-baseline="central">Legacy data</text>
+<circle cx="290" cy="492" r="5" fill="#D4537E"/><text class="st hint" x="302" y="492" dominant-baseline="central">Custom logic</text>
+<circle cx="415" cy="492" r="5" fill="#7F77DD"/><text class="st hint" x="427" y="492" dominant-baseline="central">Integrations</text>
+<circle cx="540" cy="492" r="5" fill="#1D9E75"/><text class="st hint" x="552" y="492" dominant-baseline="central">End users</text>
+</svg>
